@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/contact.css">
+  <link rel="shortcut icon" href="assets/icones/logo_vador_rouge_vif.png" type="image/x-icon">
+  <title>Formulaire de contact</title>
+</head>
+<body>
+  <header>
+    <div id="enteteResponsive">
+    </div>
+    <div id="entete">
+      <a href="index.html" id="logoLink">
+        <img src="assets/icones/logo_vador_rouge_vif.png  " alt="logo du site : dark vador" id="logoSite">
+      </a>
+      <div id="titreEtAccroche">
+        <h1 id="titreSite">Le mal sur vos écrans</h1>
+        <h2 id="accrocheSite">Une panoplie des plus terribles personnages que nous ayons connus</h2>
+      </div>
+    </div>
+    <div class="navbar">
+      <a href="index.html" class="navItem">Accueil</a>
+      <a href="prestations.html" class="navItem">Prestations</a>
+      <a href="réalisations.html" class="navItem">Réalisations</a>
+      <a href="avenir.html" class="navItem">Projets à venir</a>
+    </div>
+    <div class="navbarResponsive">
+      <img src="assets/icones/icone_burger.png" alt="">
+      <div class="navResponsive">
+        <a href="index.html" class="navItem">Accueil</a>
+        <a href="prestations.html" class="navItem">Prestations</a>
+        <a href="réalisations.html" class="navItem">Réalisations</a>
+        <a href="avenir.html" class="navItem">Projets à venir</a>
+      </div>
+    </div>
+  </header>
+  <a href="#" class="boutonHaut">Retour en haut ↑</a>
+  <div class="container">
+    <form method="post" action="index.html">
+    <h3>Contactez-moi</h3>
+      <fieldset>
+        <legend>Vos données personnelles : </legend>
+          <div class="divInput">
+            <label for="nom">Nom :</label>
+            <input placeholder="Indiquez ici votre nom" type="text" id="nom" name="nom" size="18">
+          </div>
+          <div class="divInput">
+            <label for="prenom">Prénom :</label>
+            <input placeholder="Indiquez ici votre prénom" type="text" id="prenom" name="prenom" size="18">
+          </div>
+          <div class="divInput">
+            <label for="birthday">Date de naissance :</label>
+            <input type="datetime-local" id="birthday" name="birthday">
+          </div>
+          <div class="divInput">
+            <label for="mail">Adresse mail :</label>
+            <input placeholder="Indiquez ici votre mail" type="email" id="mail" name="mail" size="18">
+          </div>
+          <div class="divInput inputRegion">
+            <label for="region">Berry</label>
+            <input type="radio" id="berry" name="region">
+            <label for="region">Reste du monde</label>
+            <input type="radio" id="autre" name="region">
+          </div>
+          <div class="divInput">
+            <label for="couleur">Séléctionnez votre couleur preferée :</label>
+            <select name="couleur" id="couleur">
+              <option selected value="rouge">Rouge</option>
+              <option value="vert">Vert</option>
+              <option value="bleu">Bleu</option>
+              <option value="noir">Noir</option>
+              <option value="blanc">Blanc</option>
+            </select>
+          </div>
+      </fieldset>
+      <fieldset>
+        <legend>Compétences</legend>
+          <div class="divInput">
+            <input name="html" id="html" type="checkbox">
+            <label for="html">HTML</label>
+            <input name="css" id="css" type="checkbox">
+            <label for="css">CSS</label>
+            <input name="javascript" id="javascript" type="checkbox">
+            <label for="javascript">JavaScript</label>
+            <input name="php" id="php" type="checkbox">
+            <label for="php">PHP</label>
+          </div>
+          <div id="divCurseur">
+            <p>Quel est votre niveau en HTML ? (Déplacez le curseur)</p>
+            <input type="range" id="curseur" name="curseur">
+          </div>
+          <textarea name="experience" id="experience" cols="30" rows="10">Décrivez une expérience pro</textarea>
+      </fieldset>
+      <fieldset>
+        <legend>Validation</legend>
+        <div class="divInput inputPassword">
+          <label for="password">Choisissez un mot de passe (9 caractères minimum)</label>
+          <input type="password" id="password" name="password" minlength="9" required>
+        </div>
+        <div class="divInput inputPolitique"></div>
+        <input type="radio" id="politique" name="politique">
+        <label for="politique">En cochant cette case, j'accepte la politique de confidentialité.</label>
+      </fieldset>
+      <button>Envoyer</button>
+    </form>
+    <div class="rappel">
+      <h3>Au fait, mes réseaux sont là, hein 	&#x1F609;</h3>
+      <a class="rappelReseau" href="https://www.linkedin.com/in/ilan-senouci-9822b1a8/">LinkedIn</a>
+      <p>-</p>
+      <a class="rappelReseau" href="https://twitter.com/MrHiess">X</a>
+      <p>-</p>
+      <a class="rappelReseau" href="https://www.facebook.com/hiess.sen.1">Facebook</a>
+      <p>-</p>
+      <a class="rappelReseau" href="https://www.playstation.com/fr-fr/playstation-network/">Playstation Network</a>
+    </div>
+  </div>
+  <footer>
+    <div class="reseauxSociaux">
+      <a href="https://www.linkedin.com/in/ilan-senouci-9822b1a8/" target="_blank">
+        <img src="assets/icones/icone_linkedin.png" alt="icone du réseau social Linkedin" class="logoRS">
+      </a>
+      <a href="https://twitter.com/MrHiess" target="_blank">
+        <img src="assets/icones/icone_x.png" alt="icone du réseau social X" class="logoRS">
+      </a>
+      <a href="https://www.facebook.com/hiess.sen.1s" target="_blank">
+        <img src="assets/icones/icone_facebook.png" alt="icone du réseau social Facebook" class="logoRS">
+      </a>
+      <a href="https://www.playstation.com/fr-fr/playstation-network/" target="_blank">
+        <img src="assets/icones/icone_playstation.png" alt="icone du réseau social Playstation App" class="logoRS">
+      </a>
+    </div>
+    <div class="navFooter">
+      <a href="apropos.html" class="navFooterItem">A propos</a>
+      <a href="contact.html" class="navFooterItem">Contact</a>
+      <a href="404.html" class="navFooterItem">404</a>
+      <a href="mentions_legales.html" class="navFooterItem" target="_blank">Mentions légales</a>
+    </div>
+    <div id="finDePage">
+      <p>Copyright : &copy;, 2024, Ilan SENOUCI</p>
+      <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img id="cssValidation" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="CSS Valide !" />
+        </a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

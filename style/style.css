@@ -1,0 +1,446 @@
+/* Auteur : Ilan SENOUCI
+Thème graphique : Sombre / Mal
+Description : Site statique représentant les figures maléfiques les plus connues de la fiction moderne.
+  Contient également une page "à propos", une page retraçant les principaux projets de l'auteur, ainsi qu'une page previsionnelle de ses projets à venir.
+Tags : ilan, senouci, mal, méchant, antagoniste, cinéma, série, livre, bande, dessinée, séries, fiction; */
+body{
+  margin: 0;
+  color: #ffffff;
+  background-color: #2c363f;
+}
+h1, h2, h3, h4{
+  text-transform: uppercase;
+}
+header{
+  background-color: #121212 ;
+}
+header div#enteteResponsive{
+  display: none;
+}
+header #entete{
+  display: flex;
+  width: 80%;
+  margin: 0 15%;
+  border-bottom: 1px solid #ffffff;
+}
+header #entete #logoLink{
+  display: flex;
+  justify-content: center;
+  margin: 15px auto;
+}
+header #entete #logoLink #logoSite{
+  width: 40%;
+  height: auto;
+}
+header #entete #logoLink #logoSite:hover{
+  filter: drop-shadow(0px 0px 0.5em #ff0000);
+}
+header div#entete div#titreEtAccroche{
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 100%;
+}
+header div#entete div#titreEtAccroche h1#titreSite, header div#entete div#titreEtAccroche h2#accrocheSite{
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+}
+header div#entete div#titreEtAccroche h1#titreSite{
+  text-shadow: #ff0000 0px -8px 24px, #ff0000 0px 8px 24px, #ff0000 0px 16px 56px;
+  font-size: 2.5em;
+}
+header div#entete div#titreEtAccroche h2#accrocheSite{
+  font-size: 1.3em;
+}
+div.navbar{
+  display: flex;
+  justify-content: space-around;
+}
+div.navbarResponsive{
+  display: none
+}
+a.navItem{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  padding: 12px 0;
+  color: #ffffff;
+}
+a.navItem:hover{
+  border-bottom: 1px solid #ffffff;
+  text-shadow: #ff0000 5px 5px 15px, #ff0000 -5px -5px 15px;
+}
+a.boutonHaut{
+  position: sticky;
+  top: 90%;
+  left: 90%;
+  padding: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: transparent;
+  font-size: 1.3em;
+  border: 1px solid #ff0000;
+  border-radius: 15px;
+}
+a.boutonHaut:hover{
+  color: #2c363f;
+  background-color: #ffffff;
+}
+div.container{
+  width: 60%;
+  margin: auto;
+  font-size: 1.5em;
+}
+div.container p{
+  text-align: justify;
+  line-height: 40px;
+}
+p.paragrapheDesktop{
+  border-bottom: 2px solid #ffffff;
+}
+p.paragrapheResponsive{
+  display: none;
+}
+div#introduction{
+  margin: 100px auto;
+}
+div.carreQuatre{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 100px auto;
+  justify-content: center;
+}
+div.carreQuatre a{
+  display: flex;
+  width: 35%;
+  text-align: center;
+}
+div.carreQuatre a:hover, div.carreQuatre div.competenceGlobale ul li:hover{
+  filter: drop-shadow(0px 0px 0.5em #ffffff);
+}
+div.carreQuatre a img{
+  width: 100%;
+  margin: auto;
+}
+div.carreQuatre a img.hoveron{
+  display: none;
+}
+div.carreQuatre a:hover img.hoveron{
+  display: inline;
+}
+div.carreQuatre a:hover img.hoveroff{
+  display: none;
+}
+div.carreQuatre div.competenceGlobale{
+  width: 45%;
+  margin: 20px auto;
+  text-align: center;
+}
+div.carreQuatre div.competenceGlobale ul{
+  width: 90%;
+  text-align: start;
+  list-style-type: none;
+}
+div.carreQuatre div.competenceGlobale ul li{
+  display: flex;
+}
+div.carreQuatre div.competenceGlobale ul li span{
+  margin-right: auto;
+}
+table{
+  width: 100%;
+  border-spacing : 10px;
+}
+thead tr th{
+  padding: 20px;
+  text-transform: uppercase;
+}
+th, td{
+  border-bottom: 1px solid #ff0000;
+}
+td{
+  text-align: center;
+}
+td.colonneImage{
+  display: flex;
+}
+td img{
+  margin: 5px auto;
+  width: 100px;
+}
+td img:hover{
+  border-radius: 50%;
+  transform: scale(3, 3);
+  box-shadow: #ffffff 0px -8px 24px, #ffffff 0px 8px 24px, #ffffff 0px 16px 56px;
+}
+th a{
+  text-decoration: none;
+  color: #ffffff;
+}
+th a:hover{
+  text-decoration: underline;
+}
+form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  margin: 20px auto;
+}
+fieldset{
+  width: 80%;
+  margin: 30px auto;
+  padding: 30px;
+  border: 2px solid #000000;
+  border-radius: 15px;
+  background-color: #2c363f;
+}
+fieldset:hover{
+  filter: drop-shadow(0px 0px 0.5em #ff0000);
+}
+legend{
+  padding: 0 5px;
+  font-weight: bolder;
+  color: #ffffff;
+  background-color: #000000;
+  border: 1px solid #ff0000;
+  border-radius: 5px;
+}
+div.divInput{
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 15px 0;
+  font-size: 0.7em;
+}
+div.inputRegion{
+  display: inline;
+}
+div.rappel, div.inputPassword{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+div.rappel{
+  justify-content: space-around;
+}
+div.inputPassword{
+  justify-content: first baseline;
+}
+div.rappel{
+  font-size: 0.7em;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  background-color: #2c363f;
+}
+div.rappel:hover{
+  border: 2px solid #000000;
+  filter: drop-shadow(0px 0px 0.5em #ff0000);
+}
+div.rappel h3{
+  width: 100%;
+  text-align: center;
+}
+a.rappelReseau{
+  font-size: 1.3em;
+  line-height: 4em;
+  text-decoration: none;
+  color: #ffffff;
+}
+a.rappelReseau:hover{
+  color: #ff0000;
+  text-decoration: underline;
+}
+form button{
+  width: 21%;
+  padding: 10px 1%;
+}
+div#cartePersonnage{
+  display: flex;
+  flex-wrap: wrap;  
+}
+div#cartePersonnage h3{
+  width: 100%;
+  text-align: center;
+  text-shadow: #ff0000 5px 5px 15px, #ff0000 -5px -5px 15px;
+}
+div#cartePersonnage p{
+  width: 100%;
+  text-align: justify;
+}
+div#cartePersonnage img#photoPersonnage{
+  margin: 5px auto;
+  width: 300px;
+}
+div#cartePersonnage img#photoPersonnage:hover{
+  filter: drop-shadow(0px 0px 0.5em #ffffff);
+}
+div.container div.main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+div.container div.main div.carteProjet{
+  width: 44%;
+  margin-bottom: 50px;
+  border-bottom: 2px solid #ffffff;
+}
+div.container div.main div.carteProjet img{
+  width: 100%;
+}
+p.confidentialite{
+  border-bottom: 1px solid #ff0000;
+}
+a.lienConfidentialite{
+  text-decoration: none;
+  color: #ffffff;
+}
+a.lienConfidentialite:hover{
+  text-decoration: underline;
+}
+footer{
+  margin: 10px 0 0 0;
+  padding: 10px 10%;
+  background-color: #121212;
+}
+footer a{
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+footer div.reseauxSociaux, footer div.navFooter{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px auto;
+  padding: 20px 0;
+  border-bottom: 1px solid #ff0000;
+}
+footer div.navFooter a{
+  text-transform: uppercase;
+}
+footer div.navFooter a:hover{
+  border-bottom: 1px solid #ffffff;
+  text-shadow: #ff0000 5px 5px 15px, #ff0000 -5px -5px 15px;
+}
+footer div.reseauxSociaux a img{
+  margin: auto;
+  border-radius: 10%;
+  width: 50%;
+}
+div#finDePage{
+  display: flex;
+  justify-content: space-around;
+}
+img#cssValidation{
+  border:0;
+  width:88px;
+  height:31px;
+}
+
+@media screen and (max-width: 1700px){
+  header div#entete div#titreEtAccroche h2#accrocheSite{
+    font-size: 1.1em;
+  }
+  div.carreQuatre div.competenceGlobale{
+    width: 100%;
+    border-bottom: 2px solid #ffffff;
+    /* font-size: 0.9em; */
+  }
+}
+@media screen and (max-width: 1200px){
+  
+  header #entete{
+    margin: auto;
+  }
+  #logoSite{
+    display: none;
+  }
+  div.container{
+    font-size: 1em;
+  }
+  table{
+    width: 100%;
+    font-size: 0.5em;
+    border-spacing : 0;
+  }
+  div.carreQuatre div.competenceGlobale{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1000px){
+  div.carreQuatre div.competenceGlobale ul{
+    padding: 0;
+  }
+  div.carreQuatre div.competenceGlobale ul li{
+    margin-top: 10px;
+  }
+  div.container div.main div.carteProjet{
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 700px){
+  div.container{
+    width: 90%;
+  }
+  header div.navbar{
+    display: none;
+  }
+  header div.navbarResponsive{
+    display: block;
+  }
+  header div.navbarResponsive div.navResponsive{
+    display: none;
+  }
+  header div.navbarResponsive:hover div.navResponsive{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  header div.navbarResponsive div.navResponsive a.navItem{
+    width: 100%;
+    background-color: #2c363f;
+  }  
+  p.paragrapheResponsive{
+    display: block;
+    margin-bottom: 30px;
+  }
+  p.paragrapheDesktop{
+    display: none;
+  }
+  div.carreQuatre a{
+    width: 100%;
+  }
+  table{
+    border-spacing : 0;
+  }
+  thead tr th{
+    padding: 5px;
+    text-transform: none;
+  }
+  td img{
+    margin: auto;
+    width: 50px;
+  }
+  form{
+    width: 100%;
+    margin: auto;
+  }
+  fieldset{
+    width: 100%;
+  }
+  div.divInput{
+    width: 80%;
+  }
+  footer{
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 400px){
+  footer{
+    font-size: 0.7em;
+  }
+}

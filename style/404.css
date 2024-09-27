@@ -1,0 +1,46 @@
+div.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 100px auto;
+}
+div#hover404 {
+  width: 100%;
+  aspect-ratio: 4/2;
+  background-image: url(../assets/images/404mechants2.jpg);
+  background-size: 100%;
+  object-fit: cover;
+}
+div#hover404:hover{
+  background-image: url(../assets/images/404mechants3.jpg);
+}
+h3.titre404{
+  width: 100%;
+  margin: 10px auto;
+  font-size: 3em;
+  text-align: center;
+  text-shadow: #ff0000 0px -8px 24px, #ff0000 0px 8px 24px, #ff0000 0px 16px 56px;
+}
+.texte404{
+  margin: 10px auto;
+  font-size: 2em;
+  text-align: center;
+  text-shadow: #ff0000 0px -8px 24px, #ff0000 0px 8px 24px, #ff0000 0px 16px 56px;
+}
+a.texte404{
+  width: 100%;
+  margin: 50px auto;
+  text-decoration: none;
+  color: #000000;
+}
+a.texte404:hover{
+  color: #ffffff;
+  text-shadow: #ffc800 0px -16px 24px, #ffc800 0px 16px 24px, #ffc800 0px 16px 56px;
+  border-bottom: 2px solid #ffffff;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 700px){
+div#hover404 {
+    background-image: url(../assets/images/404mechants3.jpg);
+  }
+}
